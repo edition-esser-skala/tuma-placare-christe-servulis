@@ -2,7 +2,7 @@ composer: Tůma, František Ignác Antonín
 title: Placare Christe servulis
 id: (A-Wn Mus.Hs.15685)
 genre: hymnus
-scoring:
+scoring: S (solo), S, A, T, B (coro), cnto, fag, 2 trb, 2 vl, b, org
 sources:
   1:
     siglum: A-Wn
@@ -12,5 +12,5 @@ sources:
     rism:
     url: http://data.onb.ac.at/rec/AC14297578
 github: tuma-placare-christe-servulis
-imslp:
+imslp: Placare_Christi_servulis_(Tůma%2C_František_Ignác_Antonín)
 notes:
