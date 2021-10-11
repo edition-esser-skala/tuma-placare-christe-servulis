@@ -188,7 +188,7 @@ BassFigures = \figuremode {
   <4>4 <_!>2.
   r4. <6 _->16 <5 \t> <_!>2
   <_->4. \bo <[6]>16 \bc <[5-]> r2
-  r8 <[10 8]> \bc <[8] 6> \bc <[7] 5> <_!>2
+  r8 <[10 8]> \bo <[8] 6> \bc <[7] 5> <_!>2
   r4 \bo <[8] 6>8 \bc <[7] 5> <_!>2 %45
   r8 \bo <[6]> <8 6 _-> \bassFigureExtendersOn \bc <[7-] 5 _-> <6 4! _->4 \bassFigureExtendersOff <6>8 <[6 5 _-]>
   <4>4 <_!>2.

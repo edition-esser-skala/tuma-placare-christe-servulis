@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "vl 1"
+    instrumentName = "fag"
   }
 }
 
@@ -47,12 +47,12 @@
     \header {
       title = "P L A C A R E   C H R I S T E   S E R V U L I S"
     }
-    \paper { indent = 2\cm }
+    \paper { indent = 2\cm page-count = #1 }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \ViolinoI
+          \set Staff.instrumentName = "Fagotto"
+          \Fagotto
         }
       >>
     }
