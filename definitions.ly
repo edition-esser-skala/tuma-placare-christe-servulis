@@ -474,7 +474,7 @@ bc =
   \context {
     \Score
     \compressEmptyMeasures
-    \override BarNumber.break-visibility = #'#(#f #t #t)
+    % \override BarNumber.break-visibility = #'#(#f #t #t)
   }
   \context {
     \StaffGroup
@@ -685,8 +685,13 @@ tocLabelLong = #(define-music-function
 
 
 tempoPlacare = \tempoMarkup "Larghetto"
+tempoEtVos = \tempoMarkup "Andante"
+tempoAmen = \tempoMarkup "[Allegro]"
+tempoFinis = \tempoMarkup "Adagio"
 
 
+\include "notes/cnto.ly"
+\include "notes/fag.ly"
 \include "notes/trb1.ly"
 \include "notes/trb2.ly"
 \include "notes/vl1.ly"

@@ -2,17 +2,6 @@
 
 \include "../definitions.ly"
 
-\paper {
-  % #(set-paper-size "a4landscape")
-  % top-margin = 1\cm
-  % bottom-margin = .5\cm
-  % outer-margin = 2\cm
-  % inner-margin = 1.5\cm
-  % indent = 1\cm
-  % #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
-  % #(define (page-post-process layout pages) (ly:create-ref-file layout pages))
-}
-
 #(set-global-staff-size 15.87)
 
 \book {
@@ -21,10 +10,18 @@
       title = "P L A C A R E   C H R I S T E   S E R V U L I S"
     }
     \paper { indent = 3\cm }
-    \tocSection "1.1" "First"
-    \tocLabelLong "label" "1.1" "Choral" "First"
     \score {
       <<
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = "Cornetto"
+            \Cornetto
+          }
+          \new Staff {
+            \set Staff.instrumentName = "Fagotto"
+            \Fagotto
+          }
+        >>
         \new StaffGroup <<
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "Trombone"
@@ -92,7 +89,7 @@
         \new FiguredBass { \BassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

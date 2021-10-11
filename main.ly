@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "scores/full_score.ly"
-% cornetto, fag, vlc,
+
 % \include "scores/trb1.ly"
 % \include "scores/trb2.ly"
 % \include "scores/vl1.ly"
