@@ -1,14 +1,12 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-#(set-global-staff-size 15.87)
+\include "score_settings/full-score.ly"
 
 \book {
   \bookpart {
-    \header {
-      title = "P L A C A R E   C H R I S T E   S E R V U L I S"
-    }
+    \section "Placare Christe servulis"
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
@@ -50,25 +48,19 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \Soprano }
           }
           \new Lyrics \lyricsto Soprano \SopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \Alto }
           }
           \new Lyrics \lyricsto Alto \AltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \Tenore }
           }
           \new Lyrics \lyricsto Tenore \TenoreLyrics

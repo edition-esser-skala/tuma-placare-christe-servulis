@@ -1,52 +1,13 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-\paper {
-  indent = 1\cm
-  top-margin = 1.5\cm
-  system-separator-markup = ##f
-  system-system-spacing =
-    #'((basic-distance . 18)
-       (minimum-distance . 18)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -100)
-       (stretchability . 0))
-
-  markup-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-  systems-per-page = #9
-}
-
-#(set-global-staff-size 17.82)
-
-\layout {
-  \context {
-    \Staff
-    instrumentName = "fag"
-  }
-}
+#(define option-instrument-name "fag")
+\include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
-    \header {
-      title = "P L A C A R E   C H R I S T E   S E R V U L I S"
-    }
+    \section "Placare Christe servulis"
+    \addTocEntry
     \paper { indent = 2\cm page-count = #1 }
     \score {
       <<
